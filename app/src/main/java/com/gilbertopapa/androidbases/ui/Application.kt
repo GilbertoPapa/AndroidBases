@@ -1,6 +1,12 @@
 package com.gilbertopapa.androidbases.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import com.gilbertopapa.androidbases.databinding.ActivityMainBinding
+import com.gilbertopapa.androidbases.databinding.ApplicationBinding
+import com.gilbertopapa.ui.BaseActivity
 
-class Application : AppCompatActivity() {
+class Application : BaseActivity<ApplicationBinding>() {
+    override val inflate: (LayoutInflater) -> ApplicationBinding
+        get() = ApplicationBinding::inflate
+
 }

@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 
-abstract class BaseViewBindingActivity<Binding : ViewBinding> : AppCompatActivity() {
+abstract class BaseActivity<Binding : ViewBinding> : AppCompatActivity() {
     protected abstract val inflate: (LayoutInflater) -> Binding
 
     private val binding: Binding by lazy {
