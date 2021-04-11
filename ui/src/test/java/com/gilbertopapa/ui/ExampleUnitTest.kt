@@ -1,4 +1,4 @@
-package com.gilbertopapa.androidbases
+package com.gilbertopapa.ui
 
 import org.junit.Test
 
